@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/members/new" method="post"> <!-- /members/new로 name이 post 방식으로 전달됨. -->
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="PLZ, Input your name">
+            <!-- input 태그에서 값을 전달하려면 name 속성을 주어야 파라미터로 전송을 할 수 있다고 함. -->
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div>
+</body>
+</html>
+
